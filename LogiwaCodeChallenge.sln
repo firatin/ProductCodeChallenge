@@ -15,6 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Api", "Project.Api\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Web", "Project.Web\Project.Web.csproj", "{3F5B0B20-38FE-4FBE-92C4-07CF0A037C1E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{7D730B30-4A19-409F-ADF1-CA9F5E6FA257}"
+	ProjectSection(SolutionItems) = preProject
+		..\Logiwa.CodeChellange.postman_collection.json = ..\Logiwa.CodeChellange.postman_collection.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
