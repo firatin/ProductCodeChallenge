@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Project.Business</AssemblyName>
+    <RootNamespace>Project.Business</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Core\Project.Core.csproj" />
+    <ProjectReference Include="..\Project.DataAccess\Project.DataAccess.csproj" />
+    <ProjectReference Include="..\Project.Entities\Project.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
