@@ -63,11 +63,17 @@ namespace Project.Business.Operation {
             if (booksListControl.Count == 0) {
                 var dataArray = new List<Product>() {
                         new Product {
-                            CategoryId = 1, Title = "Ürün1", Description = "ürün 1", Price = 1000, StockQuantity = 15,IsActive=true
+                            CategoryId = 1, Title = "The Perfect Sandwich, A Real NYC Classic", Description = "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.", Price = 1000, StockQuantity = 15,IsActive=true
                         },
                         new Product {
-                            CategoryId = 2, Title = "Ürün2", Description = "ürün 2", Price = 8000, StockQuantity = 5,IsActive=true
-                        } };
+                            CategoryId = 2, Title = "Let Me Tell You About This Steak", Description = "Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.", Price = 8000, StockQuantity = 5,IsActive=true
+                        },
+                        new Product {
+                            CategoryId = 1, Title = "Cherries, interrupted", Description = "Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.", Price = 2800, StockQuantity = 9,IsActive=true
+                        },
+                        new Product {
+                            CategoryId = 1, Title = "Robust Wine and Vegetable Pasta", Description = "Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.", Price = 690, StockQuantity = 30,IsActive=true
+                        }, };
                 foreach (var data in dataArray) {
                     _productDL.Add(data);
 

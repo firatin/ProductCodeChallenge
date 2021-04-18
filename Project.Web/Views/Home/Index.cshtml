@@ -1,0 +1,28 @@
+﻿@model Project.Web.Models.PageModels.ProductPageModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<form asp-action="Search" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    @Html.AntiForgeryToken()
+
+    <div class="input-group">
+        <span class="input-group-btn">
+            <input type="submit" class="btn btn-success" value="Search" />
+        </span>
+        <input asp-for="Search.SearchTitle" name="SearchTitle" placeholder="Product Title" required class="form-control" />
+        <span asp-validation-for="Search.SearchTitle" class="text-danger"></span>
+    </div><!-- /input-group -->
+</form>
+
+<div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+    @foreach (var product in Model.Products) {
+
+        <div class="w3-quarter">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="@product.Title" style="width:100%">
+            <h3>@product.Title</h3>
+            <p>@product.Description</p>
+        </div>
+    }
+</div>

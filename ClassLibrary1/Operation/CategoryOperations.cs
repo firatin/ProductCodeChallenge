@@ -47,10 +47,10 @@ namespace Project.Business.Operation {
             if (booksListControl.Count == 0) {
                 var dataArray = new List<Category>() {
                      new Category {
-                    CategoryName = "Kategori1", Description = "kategori 1", StockLimit = 10,IsActive=true
+                    CategoryName = "Vegetable Pasta", Description = "Robust Wine and Vegetable Pasta", StockLimit = 10,IsActive=true
                 },
                 new Category {
-                    CategoryName = "Kategori2", Description = "kategori 2", StockLimit = 5,IsActive=true
+                    CategoryName = "Classic Sandwich", Description = "The Perfect Sandwich", StockLimit = 5,IsActive=true
                 }
                 };
                 foreach (var data in dataArray) {

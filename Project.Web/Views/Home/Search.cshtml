@@ -1,0 +1,20 @@
+﻿@model Project.Web.Models.PageModels.SearchListPageModel
+
+@{ ViewData["Title"] = "Search"; }
+
+<div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+    @if (Model.Products.Any()) {
+<h4>@Model.Products.Count adet ürün bulundu.</h4>
+
+                @foreach (var product in Model.Products) {
+
+<div class="w3-quarter">
+    <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="@product.Title" style="width:100%">
+    <h3>@product.Title</h3>
+    <p>@product.Description</p>
+</div>}}
+            else {
+                <h4>:( ürün bulunamadı.</h4>
+            }
+</div>
